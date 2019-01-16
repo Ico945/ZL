@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>
+    <%= settings.title %>
+  </title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' type='text/css' />
+  <link rel='stylesheet' href='/stylesheets/normalize.css' />
+  <link rel='stylesheet' href='/stylesheets/skeleton.css' />
+  <link rel='stylesheet' href='/stylesheets/index.css' />
+  <link rel='stylesheet' href='/stylesheets/header.css' />
+  <link rel='stylesheet' href='/stylesheets/footer.css' />
+  <link rel='stylesheet' href='/stylesheets/about.css' />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <% include header %>
+    </div>
+    <div class="row">
+      <div class="background">
+        <div class="main-title">
+          树木拥有绿色 地球才有脉搏
+        </div>
+        <div class="sub-title">
+          <p>TREES HAVE GREEN EARTH HAVE A PULSE</p>
+          <p>>>>深圳环保科技研究所</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" >
+        <div class="container">
+          <h4 class="case">成功案例</h4>
+          <p class="case dash">SUCCES CASE</p>
+          <div class="container">
+            <div class="row">
+              <div class="four columns image">
+                <img src="/images/case/1.png" height="160" width="235" alt="">
+                <figcaption>杭州鑫凯传动工程案例</figcaption>
+              </div>
+              <div class="four columns image">
+                <img src="/images/case/2.png" height="160" width="235" alt="">
+                <figcaption>金华飞翔真空镀膜工程案例</figcaption>
+              </div>
+              <div class="four columns image">
+                <img src="/images/case/3.png" height="160" width="235" alt="">
+                <figcaption>金华飞翔真空镀膜工程案例</figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="four columns image">
+            <img src="/images/case/4.png" height="160" width="235" alt="">
+            <figcaption>兰溪百奥印刷包装工程案例</figcaption>
+          </div>
+          <div class="four columns image">
+            <img src="/images/case/5.png" height="160" width="235" alt="">
+            <figcaption>武义好利来</figcaption>
+          </div>
+          <div class="four columns image">
+            <img src="/images/case/6.png" height="160" width="235" alt="">
+            <figcaption>武义好利来</figcaption>
+          </div>
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="container profile-container">
+        <h4 class="profile-title">
+          公司简介
+        </h4>
+        <p class="dash profile-title">COMPANY PROFILE</p>
+        <div class="profile-image-container">
+          <img src="/images/company-profile.png" height="160" width="235" alt="">
+          <p>浙江金华中兰环保科技有限公司以深圳环保科学研究所为依托，是一家从事环保技术研发、环保设备研发、环保工程施工、环保设备生产、销售及安装。自公司成立以来，中兰环保重点在工业废气及粉尘处理领域一直开拓进取，环保污染访址领域积累了丰富的经验，承建了近300个环保项目，为政府和大企业客户提供创新技术和环境治理方案，是目前国内最知名最具实力的环境治理企业之一。</p>
+        </div>
+        <div class="profile-button">
+          <a href="/about" >了解更多</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="row">
+      <% include footer %>
+    </div>
+  </div>
+
+</body>
+
+</html>

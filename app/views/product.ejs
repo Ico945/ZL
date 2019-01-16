@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= settings.title %>
+    </title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' type='text/css' />
+    <link rel='stylesheet' href='/stylesheets/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/skeleton.css' />
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link rel='stylesheet' href='/stylesheets/header.css' />
+    <link rel='stylesheet' href='/stylesheets/footer.css' />
+    <link rel='stylesheet' href='/stylesheets/product.css' />
+
+    <script type="text/javascript">
+        function switchContentBox(obj, id) {
+            var div_content = document.getElementById(id);
+            if(div_content.style.display=="none") {
+                div_content.style.display = "";
+                var div_li;
+                var li_id = 'li' + id.slice(15);
+                var div_li = document.getElementById(li_id);
+                div_li.style.backgroundColor = "#ff9e34";
+                div_li.style.color = "#ffffff";
+                for(var i=1; i<=5; i++) {
+                    var li_id2 = 'li' + i;
+                    if (li_id != li_id2) {
+                        document.getElementById(li_id2).style.backgroundColor = "#ffffff";
+                        document.getElementById(li_id2).style.color = "#ff9e34";
+                        document.getElementById('product-content' + i).style.display='none';
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <% include header %>
+        </div>
+        <div class="row">
+            <div class="background">
+                <div class="main-title">
+                    树木拥有绿色 地球才有脉搏
+                </div>
+                <div class="sub-title">
+                    <p>TREES HAVE GREEN EARTH HAVE A PULSE</p>
+                    <p>>>>深圳环保科技研究所</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="products">
+            <div class="product-title">
+                智能制造服务
+            </div>
+
+            <div class="product-list">
+                <ul>
+                    <li id="li1" onmouseover="switchContentBox(this, 'product-content1')">Uv光氧</li>
+                    <li id="li2" onmouseover="switchContentBox(this, 'product-content2')">旋流塔</li>
+                    <li id="li3" onmouseover="switchContentBox(this, 'product-content3')">活性炭</li>
+                    <li id="li4" onmouseover="switchContentBox(this, 'product-content4')">沸石转轮</li>
+                    <li id="li5" onmouseover="switchContentBox(this, 'product-content5')">脱硫脱硝</li>
+                </ul>
+
+                <div class="product-contents">
+                        <span class="product-content1" id="product-content1">
+                                <img src="/images/products/pro1.png">
+                                <div>
+                                    <h5>Uv光氧</h5>
+                                    <p>光氧催化废气处理设备主要利用特制的高能高臭氧UV紫外线光束照射废气，
+                                        裂解工业废气如：氨、三甲胺、硫化氢、甲硫氢、甲硫醇、甲硫醚、乙酸丁酯、乙酸乙酯、二甲二硫、二硫化碳和苯乙烯、硫化物H2S,VOC类、苯、甲苯、二甲苯的分子链结构，
+                                        使有机或无机高分子恶臭化合物的分子链在高能紫外线的光束的照射下降解转变成低分子化合物，如CO2和H2O等。利用高能高臭氧UV紫外线光束分解空气中的氧分子及水分子产生游离氧（活性氧）和OH自由基，因游离氧和所携正负电子不平衡所以需与氧分子结合，进而产生臭氧。
+                                    </p>
+                                </div>
+                            </span>
+            
+                            <span class="product-content2" style="display: none;" id="product-content2">
+                                <img src="/images/products/pro2.png">
+                                <div>
+                                    <h5>旋流塔</h5>
+                                    <p>
+                                        旋流塔是处理粉尘设备.结构与喷淋塔结构同样，主要是由格栅板填料改变为旋流叶片，第一层为顺时针叶片喷淋，第二层为逆时针叶片喷淋，起到一个顺逆两相气体相冲变化，从而使粉尘流入塔底，第三层是大小头除雾层，起到一个不能让水分跟随气体流出排放。采用环保PP材质，耐腐蚀，抗酸碱，制作简单容易操作造价低等等优势，从而达到环保要求最佳优势产品。
+                                    </p>
+                                </div>
+                            </span>
+            
+                            <span class="product-content3" style="display: none;" id="product-content3">
+                                <img src="/images/products/pro3.png">
+                                <div>
+                                    <h5>活性炭</h5>
+                                    <p>活性炭再生法，活性炭再生是吸附饱满的活性炭通过一定条件处理后再次活化。活性炭在环境保护，工业与民用方面己被大量使用，并且取得了相当的成效，然而活性炭在吸附饱合被更换后，使用活性炭吸附是一个物理过程，因此还可以采用高温蒸汽将使用过的活性炭内之杂质进行脱附，并使其恢复原有之活性，以达到重复使用的目的，具有明显的经济效益。再生后的活性炭其用途仍可连续重复使用及再生。活性炭再生是吸附饱满的活性炭通过一定条件处理后再次活化。
+                                        国家先后发布了《中华人民共和国循环经济促进法》、《“十二五”循环经济发展规划》等文件，鼓励各行业重视和加强生产、生活中所产生废物的再利用。
+                                    </p>
+                                </div>
+                            </span>
+            
+                            <span class="product-content4" style="display: none;" id="product-content4">
+                                <img src="/images/products/pro4.png">
+                                <div>
+                                    <h5>沸石转轮</h5>
+                                    <p>沸石转轮设备主要用来处理低浓度、大风量的VOCs废气排放。尤其在涂装行业有机废气污染中占了很大的比例，沸石转轮技术是低浓度大风量有机废气治理中为经济有效的技术途径之一。
+                                    </p>
+                                </div>
+                            </span>
+                            
+                            <span class="product-content5" style="display: none;" id="product-content5">
+                                <img src="/images/products/pro5.png">
+                                <div>
+                                    <h5>脱硫脱硝</h5>
+                                    <p>系统投资小
+                                        由于系统简单以及运行中不需要使用催化剂，所以造价和运行成本比较低，有较大的经济优势阻力小；
+                                        不需要对锅炉排风系统进行改造,所以对锅炉的正常运行影响较小系统占地面积小；
+                                        只需要较小的氨或尿素储槽和输送系统，可放置锅炉附近的空旷位置，不占用锅炉房内紧凑的空间；
+                                        系统可优化；
+                                        通过有效的雾化控制模式、更精确的NOX的测量技术，可以更好控制还原剂的喷入量和混合程度，使其可获得更高更稳定的脱硝效率；
+                                        可兼容；
+                                        可以与低氮燃烧技术联合使用，实现更高的脱硝效率，满足更加严格的治理要求。</p>
+                                </div>
+                            </span>
+                </div>
+            </div>
+
+        </section>
+
+        <div class="row">
+            <% include footer %>
+        </div>
+    </div>
+
+</body>
+
+</html>

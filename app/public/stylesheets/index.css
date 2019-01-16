@@ -1,0 +1,137 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 960px;
+}
+
+.background {
+  width: 960px;
+  height: 260px;
+}
+.background::before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 380px;
+  top: 125px;
+  left: 0px;
+  background-image: url(/images/background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  filter: brightness(0.8) contrast(140%) saturate(140%);
+  z-index: -1;
+}
+.main-title {
+  width: 450px;
+  font-size: 36px;
+  margin: 0 auto;
+  color: white;
+  border: 1px solid #fff;
+  padding: 8px 16px;
+  margin-top: 150px;
+}
+
+.sub-title {
+  margin-top: 8px;
+  font-size: 18px;
+  text-align: center;
+  color: white
+}
+.sub-title > p{
+  margin-bottom: 8px;
+}
+
+.case {
+  font-size: 32px;
+  text-align: center;
+  color: #209cfb;
+  font-weight: 400;
+}
+
+p.case {
+  font-weight: 400;
+  font-size: 18px;
+}
+p.dash::after {
+  content: '';
+  background-color: #209cfb;
+  height: 2px;
+  width: 300px;
+}
+p.dash::before, p.dash::after {
+  content: '';                 /*CSS伪类用法*/
+  position: absolute;         /*定位背景横线的位置*/
+  top: 24%;
+  background: #209cfb;       /*宽和高做出来的背景横线*/
+  width: 15%;
+  height: 2px;
+}
+p.dash::before{
+  left: 24%;        /*调整背景横线的左右距离*/
+}
+p.dash::after {
+  right: 24%;
+}
+.image {
+  text-align: center;
+  margin-bottom: 18px;
+  color: #209cfb;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.profile-container {
+  padding-top: 30px;
+  width: 960px;
+  /* height: 200px; */
+  background-image: url(/images/company-background.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.profile-title {
+  color: white;
+  text-align: center;
+}
+h4.profile-title {
+  font-size: 34px;
+}
+p.profile-title::before, p.profile-title::after {
+  top: 28%;
+  background: white;       /*宽和高做出来的背景横线*/
+  width: 15%;
+  height: 2px;
+}
+p.profile-title {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.profile-image-container {
+  display: flex;
+  width: 600px;
+  margin: 18px auto;
+  margin-bottom: 0px;
+}
+.profile-image-container > p {
+  color: white;
+  width: 400px;
+  margin-left: 28px;
+}
+
+.profile-button {
+  text-align: center;
+  padding-bottom: 18px;
+}
+.profile-button > a {
+  border-radius: 15px;
+  border: none;
+  background-color: white;
+  text-decoration: none;
+  color: #209cfb;
+  display: inline-block;
+  height: 36px;
+  width: 100px;
+  line-height: 36px;
+}

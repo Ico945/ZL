@@ -1,0 +1,29 @@
+footer {
+    color: white;
+    background-color: black;
+  }
+  .footer-center {
+    padding-left: 12.5%;
+    font-size: 12px;
+  }
+  .footer-contact {
+    display: block;
+    float: right;
+    margin-right: 207.5px;
+    margin-top: 8px;
+  }
+  .footer-questionandanswer {
+    display: block;
+    float: right;
+    margin-right: 197px;
+    margin-top: 5px;
+  }
+  
+  .copyrightbackground {
+    text-align: center;
+    color: white;
+    background-color: #445870;
+    -webkit-text-size-adjust: none;
+    height: 40px;
+    line-height: 40px;
+  }
